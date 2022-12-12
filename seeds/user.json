@@ -1,0 +1,23 @@
+[
+    {
+      "name": "David Herring",
+      "email": "david.1998.herring@gmail.com",
+      "password": "abc123"
+    },
+  { 
+    "name":"Brooke Herring",
+    "email": "Brookeacurtis@gmail.com",
+    "password": "abc123"
+  },
+  { 
+    "name":"Snoopy Herring",
+    "email": "Snoopy@gmail.com",
+    "password": "abc123"
+  },
+  { 
+    "name":"Bear Herring",
+    "email": "bear@gmail.com",
+    "password": "abc123"
+  }
+  ]
+  
