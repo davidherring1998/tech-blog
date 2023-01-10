@@ -1,19 +1,22 @@
 [
-    {
-      "name": "David Herring",
-      "post": "dummy text"
-    },
-  { 
-    "name":"Brooke Herring",
-    "post": "dummy text"
+  {
+    "name": "David Herring",
+    "title": "Title Here",
+    "post": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
-  { 
-    "name":"Snoopy Herring",
-    "post": "dummy text"
+  {
+    "name": "Brooke Herring",
+    "title": "Title Here",
+    "post": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
-  { 
-    "name":"Bear Herring",
-    "post": "dummy text"
+  {
+    "name": "Snoopy Herring",
+    "title": "Title Here",
+    "post": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "name": "Bear Herring",
+    "title": "Title Here",
+    "post": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   }
-  ]
-  
+]

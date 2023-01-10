@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
 
     const post = postData.map((post) => post.get({ plain: true }));
 
-    res.render("layouts/main.handlebars", {
+    res.render("homepage", {
       post,
     });
     // res.send(post)

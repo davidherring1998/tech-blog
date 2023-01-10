@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-container{
+    display: block;
+    background-color: black;
+    height: 80px;
+    color:red;
+    font-size: 20px;
+}
+
+.header{
+    color: white;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: rgb(91, 82, 82);
+}
+
+.navBar {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.navBar li  {
+    display: inline;
+    margin: 30px;
+    margin-top: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-top: 60px;
+
+}
+a:hover{
+    color: red;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(91, 82, 82);
+    color: white;
+    text-align: center;
+    height: 20px;
+    padding: 12px;
+    margin-top: 20px;
+  }
+
+
+  /* cards  */
+
+.cardContainer{
+    border: 4.5px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 125px;
+    margin-top: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px;
+}
+
+.cardTitle{
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color:black ;
+    color: white;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: -15px;
+    padding: 10px;
+}
+
+#title{
+    color: aliceblue;
+    margin-top: 2px;
+}
+
+#information{
+    text-align: right;
+}
+
+.containerBody{
+    text-align: center;
+    padding-top: 10px;
+}

@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
-  </head>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- Nav bar section -->
+    <nav class="nav-container">
+        <header class="header">The Tech Blog</header>
+        <ul class="navBar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
 
-  <body>
-    <header>
-      <h1>
-        Tech Blog
-      </h1>
-    </header>
+    <main>{{{ body }}}</main>
 
-    {{#each post as |posts| }}
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <!-- Render user-specific data with Handlebars.js expressions -->
-    <h2>{{posts.name}}</h2>
-    <h2>{{posts.post}}</h2>
-  </div>
-  <div class="col-md-6">
-  </div>
-</div>
-{{/each}}
-
-
-    <footer>
-
+    <!-- Footer section -->
+    <footer class="footer">
+        &copy; Made with love by David Herring
     </footer>
-  </body>
-
+</body>
 </html>
