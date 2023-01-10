@@ -13,11 +13,11 @@ const PORT = process.env.PORT || 5544;
 const hbs = expHBS.create({ helpers });
 
 const sessions = {
-  secret: 'no-secret',
+  secret: 'Super secrete secret',
   cookie: {
-    httpOnly: true,
-    secure: false,
-    sameSite: 'strict',
+    // httpOnly: true,
+    // secure: false,
+    // sameSite: 'strict',
   },
   resave: false,
   saveUninitialized: true,
@@ -27,12 +27,11 @@ const sessions = {
 };
 
 app.use(session(sessions));
-
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));s
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', __dirname + '/views');
 

@@ -1,27 +1,30 @@
 const router = require('express').Router();
 const {User, Post} = require('../models');
 
-router.get('/', async (req, res) => {
-    try {
-      // Get all post and JOIN with user data
-      const postData = await Post.findAll({
-        include: [
-          {
-            model: User,
-            attributes: ['name'],
-          },
-        ],
-      });
 
-    const post = postData.map((posts) => posts.get({ plain: true }));
-//  passes into handlebars
-    res.render('homepage', { 
-      post, 
-      logged_in: req.session.logged_in 
+router.get('/:id', async (req, res) => {
+  const postData = await Post.findByPk(req.params.id)
+
+  const post = postData.get({ plain: true });
+
+  // res.send(post)
+
+  res.render('homepage', )
+});
+
+router.get('/', async (req, res) => {
+  try {
+    const postData = await Post.findAll({
     });
-    // res.send(post)
+
+    const post = postData.map((joke) => joke.get({ plain: true }));
+
+    res.render('homepage.handlebars', {
+      post,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
 module.exports = router;
