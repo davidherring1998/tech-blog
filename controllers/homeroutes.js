@@ -1,27 +1,24 @@
-const router = require('express').Router();
-const {User, Post} = require('../models');
+const router = require("express").Router();
+const { User, Post } = require("../models");
 
-
-router.get('/:id', async (req, res) => {
-  const postData = await Post.findByPk(req.params.id)
+router.get("/:id", async (req, res) => {
+  const postData = await Post.findByPk(req.params.id);
 
   const post = postData.get({ plain: true });
 
-  // res.send(post)
-
-  res.render('homepage', )
+  res.render("homepage");
 });
 
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
   try {
-    const postData = await Post.findAll({
-    });
+    const postData = await Post.findAll({});
 
-    const post = postData.map((joke) => joke.get({ plain: true }));
+    const post = postData.map((post) => post.get({ plain: true }));
 
-    res.render('homepage.handlebars', {
+    res.render("layouts/main.handlebars", {
       post,
     });
+    // res.send(post)
   } catch (err) {
     res.status(500).json(err);
   }

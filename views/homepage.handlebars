@@ -1,39 +1,12 @@
-{{!-- {{#each posts as |post| }}
+<!-- Loop over each user object -->
+{{#each post as |posts| }}
 <div class="row align-center mb-5">
   <div class="col-md-6">
-    <h2>{{{get_emoji}}} {{post.name}} {{post.id}}</h2>
+    <!-- Render user-specific data with Handlebars.js expressions -->
+    <h2>{{posts.name}}</h2>
   </div>
   <div class="col-md-6">
+    <h3>working</h3>
   </div>
 </div>
-{{/each}} --}}
-<div class='cards'>
-  {{#each posts as |post|}}
-    <div class='card'>
-      <div class='card-container'>
-        <p>{{post}}</p>
-      </div>
-      <div class='card-overlay'>
-
-        <button
-          class='like-button'
-          data-joke-id='{{id}}'
-          data-joke-like='{{likes}}'
-        >🤣{{likes}}
-        </button>
-
-        <p class='card-description'>-{{user.name}}
-          posted this joke on
-          {{format_date date_created}}
-        </p>
-        <button
-          class='dislike-button'
-          data-joke-id='{{id}}'
-          data-joke-dislikes='{{dislikes}}'
-        >☹️{{dislikes}}
-        </button>
-      </div>
-    </div>
-
-  {{/each}}
-</div>
+{{/each}}

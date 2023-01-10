@@ -31,7 +31,7 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));s
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', __dirname + '/views');
 
@@ -39,5 +39,5 @@ app.use(routes)
 
 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
+    app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}/`));
   });
